@@ -1,9 +1,9 @@
 :root{
-    --main-color: #001 ;
-    --second-color: #556;
-    --back-color: #77f
+    --main-color: #112 ;
+    --second-color: #445;
+    --back-color: #77f;
+    --text-color: #eef;
 }
-
 body{
     background-color: var(--main-color);
     color: var(--second-color);
