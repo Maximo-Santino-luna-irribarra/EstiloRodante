@@ -1,6 +1,6 @@
 :root {
     --main-color: #021526;
-    --second-color: #ccc;
+    --second-color: #bbb;
     --back-color: #5354cE;
     --text-color: #03346E;
 }
@@ -8,22 +8,12 @@
 body {
     background-color: var(--main-color);
     color: var(--text-color);
-    margin: 0px;
     min-height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     font-family: cursive;
     font-weight: 100;
 }
 
 header {
-    background-color: var(--second-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 0px;
-    box-shadow: 0 0 20px 10px var(--back-color);
     position: sticky;
     top: 0px;
 }
@@ -98,16 +88,12 @@ main {
 }
 
 .section1 h3, .section2 h3{
-    margin: 0 .5em .7em 0;
+    margin: 0 .5em .7em .5em;
     text-shadow: 5px 5px 5px  black;
 }
 
 .productsSelection{
-    display: flex;
-    justify-content: space-around;
     background-color: var(--text-color);
-    padding: 1em 0;
-    z-index: 1;
 }
 
 aside {
@@ -115,9 +101,6 @@ aside {
   top: 6em;
   align-self: start;
   height: 80dvh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -148,9 +131,7 @@ main {
 }
 
 .content {
-  flex: 1;
   background: linear-gradient(to right, #121519, var(--main-color), #121519);
-  border-right: 5px solid #ccc;
 }
 
 #productCarousel {
@@ -162,6 +143,14 @@ main {
 
 #productCarousel a{
     margin: .2em 0;
+}
+
+#carouselInner {
+  transition: transform 0.5s ease-in-out;
+}
+#carouselInner a {
+  margin: 0.2em 0;
+  height: 100px; /* Ajustá según tus imágenes */
 }
 
 /*  */
