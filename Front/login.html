@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EstiloRodante</title>
+     <link rel="stylesheet" href="/Front/loginStyle.css">
 </head>
 <body>
-    
-    <div class = Form-title>
-        <div class="titulo">
-        <h1 id = login_title> Bienvenido a es EstiloRodante </h1>
+    <h1>Bienvenido a Estilo Rodante</h1>
+
+    <div class="form-container">
+        <div class="tabs">
+            <div class="tab active" onclick="showForm('user')">User</div>
+            <div class="tab" onclick="showForm('admin')">Admin</div>
         </div>
-        
-        <form class="form">
-        <label for ="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="username">Usuario:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Acedder</button>
+
+        <!-- User Form -->
+        <form class="form active" id="userForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
         </form>
 
+        <!-- Admin Form -->
+        <form class="form" id="adminForm">
+            <label for="adminUser">Admin:</label>
+            <input type="text" id="adminUser" name="adminUser" required>
+            <label for="adminPass">Contraseña Admin:</label>
+            <input type="password" id="adminPass" name="adminPass" required>
+            <button type="submit">Acceder</button>
+        </form>
     </div>
     
+    <script src = "/Front/Scrpits/login.js"></script>
 
 
 
