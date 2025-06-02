@@ -1,4 +1,4 @@
-const products = document.querySelectorAll("#productCarousel > div");
+const products = document.querySelectorAll("#productCarousel > a");
 const upBtn = document.getElementById("btnUp");
 const downBtn = document.getElementById("btnDown");
 
