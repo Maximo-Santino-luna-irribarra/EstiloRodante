@@ -1,51 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Panel Producto - Estilo Rodante</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <a id="linkHome" href="/Front/Front_Admin/View_admin.html">home</a>
-            <a id="linkAdd" href="/Front/Front_Admin/add.html">añadir</a>
-            <a id="linkAdd" href="/Front/Front_Admin/add.html">modificar</a>
+<body class="bg-light">
 
-        </nav>
+    <header class="bg-dark text-white p-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h4 mb-0">Estilo Rodante</h1>
+            <nav>
+                <a class="text-white me-3 text-decoration-none" href="#">Home</a>
+                <a class="text-white me-3 text-decoration-none" href="#">Añadir</a>
+                <a class="text-white text-decoration-none" href="#">Modificar</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <form class = "form"> 
-            <label for = "nombre">Nombre:</label>
-            <input type ="text" id="nombre" name="nombre" required>
-            
-            <label for ="Marca">Marca:</label>
-            <input type ="text" id="Marca" name="Marca" required>
-            
-            <label for = "type">type:</label>
-            <select id="type" name="type" required>
-                <option value="Cubierta">Cubierta</option>
-                <option value="Rin">rin</option>
-            </select>   
 
-            <label for ="Descripción">Descripción:</label>
-            <input type ="text" id="Descripción" name="Descripción" required>
-            
-            <label for ="image">image:</label>
-            <input type ="text" id="image" name="image" required>
+    <main class="container">
+        <div class="row">
+            <!-- Columna izquierda: formulario -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow p-3">
+                    <h4 class="text-center mb-3">Cargar Producto</h4>
+                    <form id="productForm">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Descripción</label>
+                            <input type="text" id="descripcion" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Imagen (URL)</label>
+                            <input type="file" id="image" class="form-control" accept="image/*" onchange="updatePreview()">
 
-            <label for ="price">price:</label>
-            <input type ="text" id="price" name="price" required>
-            
-            <button type="submit">+</button> 
-        </form>
+                        </div>
+                        <div class="mb-3">
+                            <label for="type" class="form-label">Tipo</label>
+                            <select id="type" class="form-select" required>
+                                <option value="Cubierta">Cubierta</option>
+                                <option value="Rin">Rin</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Precio</label>
+                            <input type="number" id="price" class="form-control" required>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" onclick="updatePreview()">Cargar</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Columna derecha: preview -->
+            <div class="col-md-8">
+                <div class="card shadow p-3">
+                    <h4 class="text-center mb-3" id="previewNombre">Nombre del Producto</h4>
+                    <div class="text-center mb-3">
+                        <img id="previewImage" src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Vista previa"style="width: 300px; height: 200px; object-fit: cover;">
+                    </div>
+                    <p id="previewDescripcion">Aquí irá la descripción del producto...</p>
+                    <p><strong>Tipo:</strong> <span id="previewType">---</span></p>
+                    <h5 class="text-end text-success" id="previewPrice">$0.00</h5>
+                </div>
+            </div>
+        </div>
     </main>
-    
-    <footer>        
-        <h2>santi Luna and santi Martinez</h2>
 
-        <h3> © todos los derechos reservados</h3>
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p class="mb-0">Santi Luna & Santi Martinez</p>
+        <p class="mb-0">© Todos los derechos reservados</p>
     </footer>
 
+    <script src="/Front/Scrpits/add.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
