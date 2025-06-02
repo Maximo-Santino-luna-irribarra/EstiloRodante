@@ -1,0 +1,20 @@
+:root{
+    --main-color: #001 ;
+    --second-color: #556;
+    --back-color: #77f
+}
+
+body{
+    background-color: var(--main-color);
+    color: var(--second-color);
+}
+
+header{
+    background-color: var(--second-color);
+}
+
+#logoPage{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
