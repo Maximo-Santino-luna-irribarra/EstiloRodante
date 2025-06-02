@@ -13,6 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: cursive;
+    font-weight: 100;
 }
 
 header {
@@ -28,7 +30,7 @@ header {
 
 header a {
     font-size: 1.4em;
-    color: var(--back-color);
+    color: var(--text-color);
     text-decoration: none;
     margin: 0px 2em;
 }
@@ -45,10 +47,10 @@ header h1 {
     height: 50px;
     object-fit: contain;
     margin-right: 1em;
-    border-radius: 50px;
+    border-radius: 30%;
 }
 
-.productsSelection a img {
+.productsSelection a img, aside div img {
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -56,16 +58,111 @@ header h1 {
 
 main {
     display: flex;
+    color: var(--second-color);
 }
 
 .section1, .section2 {
     height: 100dvh;
     min-width: 75dvw;
     max-width: 79dvw;
-}
-
-.section1 {
-    color: var(--second-color);
     align-content: center;
     margin-left: 2em;
+}
+
+.section2 h3{
+    margin: .7em 0;
+}
+
+.productsSelection{
+    display: flex;
+    max-width: 60dvw;
+    justify-content: space-around;
+}
+
+aside {
+  position: sticky;
+  top: 6em;
+  align-self: start;
+  height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*  */
+aside {
+  position: sticky;
+  top: 6em;
+  align-self: flex-start;
+  height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 20dvw;
+}
+
+aside .productosCarrusel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
+  height: 60dvh;
+  gap: 0.5em;
+}
+
+aside .productosCarrusel div {
+  flex: 0 0 auto;
+}
+
+main {
+  display: flex;
+  gap: 1em;
+}
+
+.content {
+  flex: 1;
+}
+
+#productCarousel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 320px;
+}
+
+#productCarousel div{
+    margin: .2em 0;
+}
+
+#productCarousel > div {
+  height: 100px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#productCarousel > div img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/*  */
+
+/* Footer */
+
+footer{
+    background-color: #000;
+    color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10dvh;
+}
+
+footer p{
+    margin: 0 1em;
 }
