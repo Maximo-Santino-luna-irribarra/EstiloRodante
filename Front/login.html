@@ -6,34 +6,40 @@
     <title>EstiloRodante</title>
      <link rel="stylesheet" href="/Front/loginStyle.css">
 </head>
-<body>
-    <h1>Bienvenido a Estilo Rodante</h1>
+<body class="d-flex flex-column justify-content-center align-items-center text-center min-vh-100" 
+      style="background-image: url('/Img/upscalemedia-transformed.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+  
+  <h1 class="text-white text-shadow mb-4">Bienvenido a Estilo Rodante</h1>
 
-    <div class="form-container">
-        <div class="tabs">
-            <div class="tab active" onclick="showForm('user')">User</div>
-            <div class="tab" onclick="showForm('admin')">Admin</div>
-        </div>
-
-        <!-- User Form -->
-        <form class="form active" id="userForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </form>
-
-        <!-- Admin Form -->
-        <form class="form" id="adminForm">
-            <label for="adminUser">Admin:</label>
-            <input type="text" id="adminUser" name="adminUser" required>
-            <label for="adminPass">Contraseña Admin:</label>
-            <input type="password" id="adminPass" name="adminPass" required>
-            <button type="submit">Acceder</button>
-        </form>
+  <div class="form-container bg-white p-4 rounded shadow" style="width: 100%; max-width: 350px;">
+    <div class="tabs d-flex justify-content-around mb-3">
+      <div class="tab active" onclick="showForm('user')">User</div>
+      <div class="tab" onclick="showForm('admin')">Admin</div>
     </div>
-    
-    <script src = "/Front/Scrpits/login.js"></script>
 
+    <!-- User Form -->
+    <form class="form active" id="userForm">
+      <div class="mb-3 text-start">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" required>
+      </div>
+    </form>
 
+    <!-- Admin Form -->
+    <form class="form" id="adminForm">
+      <div class="mb-3 text-start">
+        <label for="adminUser" class="form-label">Admin:</label>
+        <input type="text" id="adminUser" name="adminUser" class="form-control" required>
+      </div>
+      <div class="mb-3 text-start">
+        <label for="adminPass" class="form-label">Contraseña Admin:</label>
+        <input type="password" id="adminPass" name="adminPass" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-dark w-100">Acceder</button>
+    </form>
+  </div>
 
+  <script src="/Front/Scrpits/login.js"></script>
 </body>
+
 </html>
