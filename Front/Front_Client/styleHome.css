@@ -33,6 +33,13 @@ header a {
     color: var(--text-color);
     text-decoration: none;
     margin: 0px 2em;
+    padding: .5em 1em;
+    border-radius: 15px;
+}
+
+header a:hover{
+  background-color: var(--text-color);
+  color: var(--second-color);
 }
 
 header h1 {
@@ -78,17 +85,29 @@ main {
     min-width: 75dvw;
     max-width: 79dvw;
     align-content: center;
-    margin-left: 2em;
 }
 
-.section2 h3{
-    margin: .7em 0;
+.section1{
+  background-image: url(/Img/bg1.jpg);
+  background-size: cover;
+}
+
+.section2{
+  background-image: url(/Img/bg2.jpg);
+  background-size: cover;
+}
+
+.section1 h3, .section2 h3{
+    margin: 0 .5em .7em 0;
+    text-shadow: 5px 5px 5px  black;
 }
 
 .productsSelection{
     display: flex;
-    max-width: 60dvw;
     justify-content: space-around;
+    background-color: var(--text-color);
+    padding: 1em 0;
+    z-index: 1;
 }
 
 aside {
@@ -130,7 +149,7 @@ main {
 
 .content {
   flex: 1;
-  background-color: #121519;
+  background: linear-gradient(to right, #121519, var(--main-color), #121519);
   border-right: 5px solid #ccc;
 }
 
