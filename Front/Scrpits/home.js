@@ -3,7 +3,8 @@ const upBtn = document.getElementById("btnUp");
 const downBtn = document.getElementById("btnDown");
 const carouselInner = document.getElementById("carouselInner");
 
-const VISIBLE_COUNT = 3;
+const isMobile = window.innerWidth < 768;
+const VISIBLE_COUNT = isMobile ? 2 : 3;
 const ITEM_HEIGHT = 100 + 4; // altura de imagen + márgenes, ajustá según tu diseño
 let currentStart = 0;
 
