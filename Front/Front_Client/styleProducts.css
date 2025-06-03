@@ -53,15 +53,14 @@ main{
 }
 
 aside{
-    width: 20dvw;
-}
-
-.filterForm{
-    margin-left: 1em;
+    width: 22dvw;
+    background-color: var(--second-color);
+    padding: 0 2em;
 }
 
 .minPrice, .maxPrice{
     width: 100%;
+    height: 1.4em;
 }
 
 .products{
