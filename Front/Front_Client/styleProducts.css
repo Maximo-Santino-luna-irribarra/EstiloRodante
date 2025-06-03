@@ -1,0 +1,118 @@
+:root {
+    --main-color: #021526;
+    --second-color: #bbb;
+    --back-color: #5354cE;
+    --text-color: #03346E;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    min-height: 100dvh;
+    font-family: cursive;
+    font-weight: 100;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+header a {
+    font-size: 1.4em;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0px 2em;
+    padding: .5em 1em;
+    border-radius: 15px;
+}
+
+header a:hover{
+  background-color: var(--text-color);
+  color: var(--second-color);
+}
+
+header h1 {
+    margin-left: 1em;
+    font-size: 1.4em;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#logoPage {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 1em;
+    border-radius: 30%;
+}
+
+main{
+    height: 70dvh;
+    justify-content: space-around;
+}
+
+aside{
+    width: 20dvw;
+}
+
+.filterForm{
+    margin-left: 1em;
+}
+
+.minPrice, .maxPrice{
+    width: 100%;
+}
+
+.products{
+    width: 70dvw;
+}
+
+.productsBox{
+    background-color: var(--second-color);
+    padding: 1em .2em;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin: .5em;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.productImage img{
+    width: 50%;
+}
+
+.productDesc{
+    width: 100%;
+}
+
+.productButtons{
+    width: 50%;
+    align-self: end;
+    display: flex;
+}
+
+
+.order{
+    background-color: var(--second-color);
+    justify-self: end;
+}
+
+/* Footer */
+
+footer{
+    background-color: #000;
+    color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10dvh;
+}
+
+footer p{
+    margin: 0 1em;
+}
