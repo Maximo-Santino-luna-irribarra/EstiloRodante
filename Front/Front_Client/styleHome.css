@@ -1,6 +1,6 @@
 :root {
     --main-color: #021526;
-    --second-color: #bbb;
+    --second-color: #bfbfbf;
     --back-color: #5354cE;
     --text-color: #03346E;
 }
@@ -16,6 +16,7 @@ body {
 header {
     position: sticky;
     top: 0px;
+    background-color: var(--second-color);
 }
 
 header a {
@@ -48,8 +49,8 @@ header h1 {
 }
 
 .productsSelection a img, aside div img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 
