@@ -11,94 +11,151 @@
 
 <header class="bg-dark text-white p-3">
 <nav class="container d-flex justify-content-between align-items-center">
-    <input type="text" class="form-control w-25" placeholder="Buscar..." />
-        <div class="nav">
-        <a class="nav-link text-white" href="/Front/Front_Admin/View_admin.html">Home</a>
-        <a class="nav-link text-white" href="/Front/Front_Admin/add.html">Añadir</a>
-        <a class="nav-link text-white" href="/Front/Front_Admin/add.html">Modificar</a>
-        </div>
+<input type="text" class="form-control w-25" placeholder="Buscar..." />
+    <div class="nav">
+    <a class="nav-link text-white" href="/Front/Front_Admin/View_admin.html">Home</a>
+    <a class="nav-link text-white" href="/Front/Front_Admin/add.html">Añadir</a>
+    <a class="nav-link text-white" href="/Front/Front_Admin/add.html">Modificar</a>
+    </div>
 </nav>
 </header>
 
-<main class="container my-4 position-relative">
+<main class="container my-4 position-relative"> <!-- CAMBIO 1: my-4A corregido -->
 <div class="row">
-    <!-- Panel izquierdo -->
-    <section class="col-md-8">
+<!-- Panel izquierdo (más ancho) -->
+<section class="col-md-10"> <!-- CAMBIO 2: de col-md-8 a col-md-10 -->
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h2>Panel</h2>
         <button class="btn btn-success">add product</button>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-        <!-- Tarjeta 1 -->
-        <div class="col d-flex justify-content-center align-items-center">
-            <div class="card shadow-sm" style="width: 18rem; text-align: initial;">
-                <!-- Imagen centrada -->
-                <img src="/Img/cubierta.png" class="card-img-top mx-auto" alt="Imagen del producto" style="width: 200px; height: 200px; object-fit: cover; padding: 20px;">
-
-                <div class="card-body">
-                    <h5 class="card-title">Tarjeta 4</h5>
-                    <p class="card-text">Descripción breve...</p>
-                    <p class="card-text">Descripción breve...</p>
-                    <p class="card-text">Descripción breve...</p>
-                    <p class="card-text">Descripción breve...</p>
-                    <button class="btn btn-danger btn-sm">Eliminar</button>
-                    <button class="btn btn-primary btn-sm">Editar</button>
-                </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Tarjeta 1 -->
+    <div class="col"> <!-- CAMBIO 6: agregada col para que se distribuya correctamente -->
+        <div class="card shadow p-4 rounded-4" style="max-width: 700px; border: 2px solid #000; margin: auto;">
+        <div class="row g-4 align-items-start">
+            <!-- Imagen -->
+            <div class="col-md-4 text-center">
+            <img src="/Img/" class="rounded-circle" alt="Producto" style="width: 140px; height: 140px;">
+            <p class="mt-3 fw-bold">Precio</p>
             </div>
-        </div>
 
-        <!-- Tarjeta 2 -->
-        <div class="col">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Tarjeta 2</h5>
-            <p class="card-text">Descripción breve...</p>
-            <button class="btn btn-danger btn-sm">Eliminar</button>
-            <button class="btn btn-primary btn-sm">Editar</button>
+            <!-- Info del producto -->
+            <div class="col-md-8">
+            <h5 class="card-title">Nombre de producto</h5>
+            <ul class="list-unstyled ps-3">
+                <li><strong>Rodado:</strong></li>
+                <li><strong>Marca y modelo: 1</strong></li>
+                <li><strong>Rango de carga:</strong></li>
+                <li><strong>Alto y ancho:</strong></li>
+                <li><strong>Nombre:</strong></li>
+                <li><strong>Tecnología:</strong></li>
+            </ul>
             </div>
-        </div>
-        </div>
+        </div> 
 
-        <!-- Tarjeta 3 -->
-        <div class="col">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">Tarjeta 3</h5>
-            <p class="card-text">Descripción breve...</p>
-            <button class="btn btn-danger btn-sm">Eliminar</button>
-            <button class="btn btn-primary btn-sm">Editar</button>
-            </div>
+        <!-- Botones abajo -->
+        <div class="d-flex justify-content-around mt-4">
+            <button class="btn btn-success fw-bold px-4 py-2">BUDGET<br>APPROVED</button>
+            <button class="btn btn-success fw-bold px-4 py-2">BUDGET<br>APPROVED</button>
         </div>
         </div>
+    </div>
 
-        <!-- Tarjeta 4 -->
-        <div class="col">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
+    <!-- Tarjeta 2 -->
+    <div class="col d-flex justify-content-center align-items-center">
+        <div class="card shadow-sm" style="width: 18rem; text-align: initial;">
+        <img src="/Img/cubierta.png" class="card-img-top mx-auto" alt="Imagen del producto" style="width: 200px; height: 200px; object-fit: cover; padding: 20px;">
+        <div class="card-body">
             <h5 class="card-title">Tarjeta 4</h5>
             <p class="card-text">Descripción breve...</p>
+            <p class="card-text">Descripción breve...</p>
+            <p class="card-text">Descripción breve...</p>
+            <p class="card-text">Descripción breve...</p>
             <button class="btn btn-danger btn-sm">Eliminar</button>
             <button class="btn btn-primary btn-sm">Editar</button>
-            </div>
         </div>
         </div>
     </div>
-    </section>
+     <!-- Tarjeta 1 -->
+    <div class="col"> <!-- CAMBIO 6: agregada col para que se distribuya correctamente -->
+        <div class="card shadow p-4 rounded-4" style="max-width: 700px; border: 2px solid #000; margin: auto;">
+        <div class="row g-4 align-items-start">
+            <!-- Imagen -->
+            <div class="col-md-4 text-center">
+            <img src="/Img/" class="rounded-circle" alt="Producto" style="width: 140px; height: 140px;">
+            <p class="mt-3 fw-bold">Precio</p>
+            </div>
 
-    </div>
-    <!-- Columna derecha -->
-    <aside class="fixed-aside">
-            <div class="bg-white p-3 rounded shadow-sm">
-                <h4>Tipo</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Manual</li>
-                        <li class="list-group-item">Automático</li>
-                        <li class="list-group-item">Datos</li>
-                    </ul>
+            <!-- Info del producto -->
+            <div class="col-md-8">
+            <h5 class="card-title">Nombre de producto</h5>
+            <ul class="list-unstyled ps-3">
+                <li><strong>Rodado:</strong></li>
+                <li><strong>Marca y modelo: 1</strong></li>
+                <li><strong>Rango de carga:</strong></li>
+                <li><strong>Alto y ancho:</strong></li>
+                <li><strong>Nombre:</strong></li>
+                <li><strong>Tecnología:</strong></li>
+            </ul>
             </div>
-    </aside>
+        </div> 
+
+        <!-- Botones abajo -->
+        <div class="d-flex justify-content-around mt-4">
+            <button class="btn btn-success fw-bold px-4 py-2">BUDGET<br>APPROVED</button>
+            <button class="btn btn-success fw-bold px-4 py-2">BUDGET<br>APPROVED</button>
+        </div>
+        </div>
+    </div>
+
+     <!-- Tarjeta 1 -->
+    <div class="col"> <!-- CAMBIO 6: agregada col para que se distribuya correctamente -->
+        <div class="card shadow p-4 rounded-4" style="max-width: 700px; border: 2px solid #000; margin: auto;">
+        <div class="row g-4 align-items-start">
+            <!-- Imagen -->
+            <div class="col-md-4 text-center">
+            <img src="/Img/" class="rounded-circle" alt="Producto" style="width: 140px; height: 140px;">
+            <p class="mt-3 fw-bold">Precio</p>
+            </div>
+
+            <!-- Info del producto -->
+            <div class="col-md-8">
+            <h5 class="card-title">Nombre de producto</h5>
+            <ul class="list-unstyled ps-3">
+                <li><strong>Rodado:</strong></li>
+                <li><strong>Marca y modelo: 1</strong></li>
+                <li><strong>Rango de carga:</strong></li>
+                <li><strong>Alto y ancho:</strong></li>
+                <li><strong>Nombre:</strong></li>
+                <li><strong>Tecnología:</strong></li>
+            </ul>
+            </div>
+        </div> 
+
+        <!-- Botones abajo -->
+        <div class="d-flex justify-content-around mt-4">
+            <button class="btn btn-success fw-bold px-4 py-2">BUDGET<br>APPROVED</button>
+            <button class="btn btn-success fw-bold px-4 py-2">BUDGET<br>APPROVED</button>
+        </div>
+        </div>
+    </div>
+
+
+    
+   
+</section>
 </main>
+<!-- ASIDE FIJO A LA DERECHA -->
+    <aside class="aside-fixed bg-white p-3 rounded shadow-sm">
+    <h4>Tipo</h4>
+        <ul class="list-group">
+            <li class="list-group-item">Manual</li>
+            <li class="list-group-item">Automático</li>
+            <li class="list-group-item">Datos</li>
+        </ul>
+    </aside>
+
 
 <footer class="bg-dark text-white text-center p-3 mt-4">
 <h5>Santi Luna and Santi Martinez</h5>

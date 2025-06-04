@@ -1,22 +1,9 @@
 
-  .fixed-aside {
-    position: fixed;
-    top: 100px; /* Ajustá según la altura de tu header */
-    right: 30px;
-    width: 280px;
-    z-index: 1000;
-  }
+.aside-fixed {
+  position: fixed;
+  top: 100px; /* separa del header */
+  right: 30px;
+  width: 200px;
+  z-index: 1000;
+}
 
-  @media (max-width: 992px) {
-    .fixed-aside {
-      position: static;
-      width: 100%;
-      margin-top: 20px;
-    }
-  }
-
-  /* Para que el contenido izquierdo no se solape con el aside fijo */
-  .with-margin-right {
-    margin-right: 320px;
-  }
-</style>
