@@ -3,11 +3,11 @@
     "marca": "BFGoodrich",
     "modelo": "Trail Terrain T/A",
     "medida": "248/65 R16",
-    "índice_de_carga": "111",
-    "índice_de_velocidad": "W",
+    "indice_de_carga": "111",
+    "indice_de_velocidad": "W",
     "precio": 584720.92,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -17,11 +17,11 @@
     "marca": "BFGoodrich",
     "modelo": "Trail Terrain T/A",
     "medida": "207/70 R18",
-    "índice_de_carga": "110",
-    "índice_de_velocidad": "Y",
+    "indice_de_carga": "110",
+    "indice_de_velocidad": "Y",
     "precio": 745489.67,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -31,11 +31,11 @@
     "marca": "BFGoodrich",
     "modelo": "Trail Terrain T/A",
     "medida": "211/65 R16",
-    "índice_de_carga": "107",
-    "índice_de_velocidad": "H",
+    "indice_de_carga": "107",
+    "indice_de_velocidad": "H",
     "precio": 359295.0,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -45,11 +45,11 @@
     "marca": "BFGoodrich",
     "modelo": "Mud Terrain KM3",
     "medida": "223/70 R17",
-    "índice_de_carga": "105",
-    "índice_de_velocidad": "Q",
+    "indice_de_carga": "105",
+    "indice_de_velocidad": "Q",
     "precio": 646571.84,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -59,11 +59,11 @@
     "marca": "BFGoodrich",
     "modelo": "Mud Terrain KM3",
     "medida": "239/70 R17",
-    "índice_de_carga": "90",
-    "índice_de_velocidad": "S",
+    "indice_de_carga": "90",
+    "indice_de_velocidad": "S",
     "precio": 491529.18,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -73,11 +73,11 @@
     "marca": "BFGoodrich",
     "modelo": "Mud Terrain KM3",
     "medida": "260/70 R15",
-    "índice_de_carga": "93",
-    "índice_de_velocidad": "S",
+    "indice_de_carga": "93",
+    "indice_de_velocidad": "S",
     "precio": 625552.65,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -87,11 +87,11 @@
     "marca": "Michelin",
     "modelo": "Primacy 4",
     "medida": "217/60 R18",
-    "índice_de_carga": "97",
-    "índice_de_velocidad": "V",
+    "indice_de_carga": "97",
+    "indice_de_velocidad": "V",
     "precio": 352621.92,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -101,11 +101,11 @@
     "marca": "Michelin",
     "modelo": "Primacy 4",
     "medida": "208/75 R17",
-    "índice_de_carga": "106",
-    "índice_de_velocidad": "H",
+    "indice_de_carga": "106",
+    "indice_de_velocidad": "H",
     "precio": 371658.89,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -115,11 +115,11 @@
     "marca": "Michelin",
     "modelo": "Primacy 4",
     "medida": "247/70 R15",
-    "índice_de_carga": "94",
-    "índice_de_velocidad": "V",
+    "indice_de_carga": "94",
+    "indice_de_velocidad": "V",
     "precio": 709550.38,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -129,11 +129,11 @@
     "marca": "Michelin",
     "modelo": "X-Ice Snow",
     "medida": "245/60 R18",
-    "índice_de_carga": "96",
-    "índice_de_velocidad": "V",
+    "indice_de_carga": "96",
+    "indice_de_velocidad": "V",
     "precio": 451250.33,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -143,11 +143,11 @@
     "marca": "Michelin",
     "modelo": "X-Ice Snow",
     "medida": "251/60 R15",
-    "índice_de_carga": "100",
-    "índice_de_velocidad": "W",
+    "indice_de_carga": "100",
+    "indice_de_velocidad": "W",
     "precio": 708198.83,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -157,11 +157,11 @@
     "marca": "Michelin",
     "modelo": "X-Ice Snow",
     "medida": "263/65 R17",
-    "índice_de_carga": "102",
-    "índice_de_velocidad": "S",
+    "indice_de_carga": "102",
+    "indice_de_velocidad": "S",
     "precio": 641469.73,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -171,11 +171,11 @@
     "marca": "Pirelli",
     "modelo": "Scorpion ATR",
     "medida": "240/65 R15",
-    "índice_de_carga": "113",
-    "índice_de_velocidad": "H",
+    "indice_de_carga": "113",
+    "indice_de_velocidad": "H",
     "precio": 616998.73,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -185,11 +185,11 @@
     "marca": "Pirelli",
     "modelo": "Scorpion ATR",
     "medida": "198/55 R19",
-    "índice_de_carga": "110",
-    "índice_de_velocidad": "T",
+    "indice_de_carga": "110",
+    "indice_de_velocidad": "T",
     "precio": 543954.15,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -199,11 +199,11 @@
     "marca": "Pirelli",
     "modelo": "Scorpion ATR",
     "medida": "244/55 R19",
-    "índice_de_carga": "115",
-    "índice_de_velocidad": "Q",
+    "indice_de_carga": "115",
+    "indice_de_velocidad": "Q",
     "precio": 620719.98,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -213,11 +213,11 @@
     "marca": "Pirelli",
     "modelo": "P Zero Trofeo R",
     "medida": "208/65 R19",
-    "índice_de_carga": "101",
-    "índice_de_velocidad": "V",
+    "indice_de_carga": "101",
+    "indice_de_velocidad": "V",
     "precio": 464851.87,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -227,11 +227,11 @@
     "marca": "Pirelli",
     "modelo": "P Zero Trofeo R",
     "medida": "214/75 R15",
-    "índice_de_carga": "95",
-    "índice_de_velocidad": "S",
+    "indice_de_carga": "95",
+    "indice_de_velocidad": "S",
     "precio": 684082.47,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -241,11 +241,11 @@
     "marca": "Pirelli",
     "modelo": "P Zero Trofeo R",
     "medida": "265/55 R15",
-    "índice_de_carga": "105",
-    "índice_de_velocidad": "Y",
+    "indice_de_carga": "105",
+    "indice_de_velocidad": "Y",
     "precio": 451711.32,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -255,11 +255,11 @@
     "marca": "Firestone",
     "modelo": "Destination LE3",
     "medida": "200/55 R19",
-    "índice_de_carga": "91",
-    "índice_de_velocidad": "Y",
+    "indice_de_carga": "91",
+    "indice_de_velocidad": "Y",
     "precio": 729015.41,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -269,11 +269,11 @@
     "marca": "Firestone",
     "modelo": "Destination LE3",
     "medida": "267/65 R17",
-    "índice_de_carga": "112",
-    "índice_de_velocidad": "W",
+    "indice_de_carga": "112",
+    "indice_de_velocidad": "W",
     "precio": 426808.74,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -283,11 +283,11 @@
     "marca": "Firestone",
     "modelo": "Destination LE3",
     "medida": "245/55 R15",
-    "índice_de_carga": "91",
-    "índice_de_velocidad": "S",
+    "indice_de_carga": "91",
+    "indice_de_velocidad": "S",
     "precio": 432586.67,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -297,11 +297,11 @@
     "marca": "Firestone",
     "modelo": "Winterforce 2 UV",
     "medida": "263/65 R17",
-    "índice_de_carga": "103",
-    "índice_de_velocidad": "Q",
+    "indice_de_carga": "103",
+    "indice_de_velocidad": "Q",
     "precio": 690127.81,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -311,11 +311,11 @@
     "marca": "Firestone",
     "modelo": "Winterforce 2 UV",
     "medida": "284/75 R16",
-    "índice_de_carga": "114",
-    "índice_de_velocidad": "T",
+    "indice_de_carga": "114",
+    "indice_de_velocidad": "T",
     "precio": 579003.81,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -325,11 +325,11 @@
     "marca": "Firestone",
     "modelo": "Winterforce 2 UV",
     "medida": "195/60 R19",
-    "índice_de_carga": "102",
-    "índice_de_velocidad": "V",
+    "indice_de_carga": "102",
+    "indice_de_velocidad": "V",
     "precio": 659525.47,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -339,11 +339,11 @@
     "marca": "Hankook",
     "modelo": "Dynapro AT2",
     "medida": "257/55 R15",
-    "índice_de_carga": "99",
-    "índice_de_velocidad": "T",
+    "indice_de_carga": "99",
+    "indice_de_velocidad": "T",
     "precio": 542877.99,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -353,11 +353,11 @@
     "marca": "Hankook",
     "modelo": "Dynapro AT2",
     "medida": "239/70 R19",
-    "índice_de_carga": "95",
-    "índice_de_velocidad": "W",
+    "indice_de_carga": "95",
+    "indice_de_velocidad": "W",
     "precio": 721798.16,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -367,11 +367,11 @@
     "marca": "Hankook",
     "modelo": "Dynapro AT2",
     "medida": "234/75 R16",
-    "índice_de_carga": "116",
-    "índice_de_velocidad": "Q",
+    "indice_de_carga": "116",
+    "indice_de_velocidad": "Q",
     "precio": 495053.47,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -381,11 +381,11 @@
     "marca": "Hankook",
     "modelo": "Ventus R-S4",
     "medida": "267/70 R18",
-    "índice_de_carga": "93",
-    "índice_de_velocidad": "W",
+    "indice_de_carga": "93",
+    "indice_de_velocidad": "W",
     "precio": 708819.3,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -395,11 +395,11 @@
     "marca": "Hankook",
     "modelo": "Ventus R-S4",
     "medida": "280/60 R16",
-    "índice_de_carga": "119",
-    "índice_de_velocidad": "W",
+    "indice_de_carga": "119",
+    "indice_de_velocidad": "W",
     "precio": 702084.88,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -409,11 +409,11 @@
     "marca": "Hankook",
     "modelo": "Ventus R-S4",
     "medida": "224/55 R18",
-    "índice_de_carga": "114",
-    "índice_de_velocidad": "T",
+    "indice_de_carga": "114",
+    "indice_de_velocidad": "T",
     "precio": 595238.89,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -423,11 +423,11 @@
     "marca": "Goodyear",
     "modelo": "Wrangler All-Terrain",
     "medida": "216/65 R15",
-    "índice_de_carga": "88",
-    "índice_de_velocidad": "Y",
+    "indice_de_carga": "88",
+    "indice_de_velocidad": "Y",
     "precio": 400128.07,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -437,11 +437,11 @@
     "marca": "Goodyear",
     "modelo": "Wrangler All-Terrain",
     "medida": "250/70 R17",
-    "índice_de_carga": "109",
-    "índice_de_velocidad": "Q",
+    "indice_de_carga": "109",
+    "indice_de_velocidad": "Q",
     "precio": 572027.83,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -451,11 +451,11 @@
     "marca": "Goodyear",
     "modelo": "Wrangler All-Terrain",
     "medida": "283/75 R18",
-    "índice_de_carga": "100",
-    "índice_de_velocidad": "W",
+    "indice_de_carga": "100",
+    "indice_de_velocidad": "W",
     "precio": 355176.39,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -465,11 +465,11 @@
     "marca": "Goodyear",
     "modelo": "Eagle F1 Asymmetric",
     "medida": "220/55 R19",
-    "índice_de_carga": "90",
-    "índice_de_velocidad": "Y",
+    "indice_de_carga": "90",
+    "indice_de_velocidad": "Y",
     "precio": 413903.41,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -479,11 +479,11 @@
     "marca": "Goodyear",
     "modelo": "Eagle F1 Asymmetric",
     "medida": "199/70 R16",
-    "índice_de_carga": "99",
-    "índice_de_velocidad": "Y",
+    "indice_de_carga": "99",
+    "indice_de_velocidad": "Y",
     "precio": 502799.5,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -493,11 +493,11 @@
     "marca": "Goodyear",
     "modelo": "Eagle F1 Asymmetric",
     "medida": "283/75 R15",
-    "índice_de_carga": "97",
-    "índice_de_velocidad": "Y",
+    "indice_de_carga": "97",
+    "indice_de_velocidad": "Y",
     "precio": 707564.02,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -507,11 +507,11 @@
     "marca": "Continental",
     "modelo": "CrossContact LX25",
     "medida": "284/55 R18",
-    "índice_de_carga": "117",
-    "índice_de_velocidad": "W",
+    "indice_de_carga": "117",
+    "indice_de_velocidad": "W",
     "precio": 553751.31,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -521,11 +521,11 @@
     "marca": "Continental",
     "modelo": "CrossContact LX25",
     "medida": "267/65 R15",
-    "índice_de_carga": "103",
-    "índice_de_velocidad": "V",
+    "indice_de_carga": "103",
+    "indice_de_velocidad": "V",
     "precio": 505818.05,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -535,11 +535,11 @@
     "marca": "Continental",
     "modelo": "CrossContact LX25",
     "medida": "198/70 R19",
-    "índice_de_carga": "99",
-    "índice_de_velocidad": "S",
+    "indice_de_carga": "99",
+    "indice_de_velocidad": "S",
     "precio": 380823.07,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -549,11 +549,11 @@
     "marca": "Continental",
     "modelo": "ExtremeContact Sport",
     "medida": "214/60 R17",
-    "índice_de_carga": "102",
-    "índice_de_velocidad": "H",
+    "indice_de_carga": "102",
+    "indice_de_velocidad": "H",
     "precio": 454970.89,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -563,11 +563,11 @@
     "marca": "Continental",
     "modelo": "ExtremeContact Sport",
     "medida": "264/65 R16",
-    "índice_de_carga": "90",
-    "índice_de_velocidad": "Y",
+    "indice_de_carga": "90",
+    "indice_de_velocidad": "Y",
     "precio": 549805.45,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -577,11 +577,11 @@
     "marca": "Continental",
     "modelo": "ExtremeContact Sport",
     "medida": "230/60 R17",
-    "índice_de_carga": "101",
-    "índice_de_velocidad": "T",
+    "indice_de_carga": "101",
+    "indice_de_velocidad": "T",
     "precio": 504529.72,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -591,11 +591,11 @@
     "marca": "Yokohama",
     "modelo": "Geolandar A/T",
     "medida": "275/55 R15",
-    "índice_de_carga": "95",
-    "índice_de_velocidad": "T",
+    "indice_de_carga": "95",
+    "indice_de_velocidad": "T",
     "precio": 398549.34,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -605,11 +605,11 @@
     "marca": "Yokohama",
     "modelo": "Geolandar A/T",
     "medida": "270/60 R16",
-    "índice_de_carga": "96",
-    "índice_de_velocidad": "W",
+    "indice_de_carga": "96",
+    "indice_de_velocidad": "W",
     "precio": 511159.06,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -619,11 +619,11 @@
     "marca": "Yokohama",
     "modelo": "Geolandar A/T",
     "medida": "202/70 R17",
-    "índice_de_carga": "120",
-    "índice_de_velocidad": "V",
+    "indice_de_carga": "120",
+    "indice_de_velocidad": "V",
     "precio": 499853.89,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -633,11 +633,11 @@
     "marca": "Yokohama",
     "modelo": "Advan Neova AD08R",
     "medida": "261/65 R19",
-    "índice_de_carga": "97",
-    "índice_de_velocidad": "S",
+    "indice_de_carga": "97",
+    "indice_de_velocidad": "S",
     "precio": 520778.62,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "offroad"
       ]
     },
@@ -647,11 +647,11 @@
     "marca": "Yokohama",
     "modelo": "Advan Neova AD08R",
     "medida": "245/55 R17",
-    "índice_de_carga": "105",
-    "índice_de_velocidad": "T",
+    "indice_de_carga": "105",
+    "indice_de_velocidad": "T",
     "precio": 641408.18,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
@@ -661,11 +661,11 @@
     "marca": "Yokohama",
     "modelo": "Advan Neova AD08R",
     "medida": "239/65 R16",
-    "índice_de_carga": "113",
-    "índice_de_velocidad": "Q",
+    "indice_de_carga": "113",
+    "indice_de_velocidad": "Q",
     "precio": 445231.92,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "nieve"
       ]
     },
@@ -675,11 +675,11 @@
     "marca": "Michelin",
     "modelo": "Primacy 4",
     "medida": "202/70 R16",
-    "índice_de_carga": "95",
-    "índice_de_velocidad": "T",
+    "indice_de_carga": "95",
+    "indice_de_velocidad": "T",
     "precio": 357311.56,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "carrera"
       ]
     },
@@ -689,11 +689,11 @@
     "marca": "BFGoodrich",
     "modelo": "Mud Terrain KM3",
     "medida": "279/60 R17",
-    "índice_de_carga": "118",
-    "índice_de_velocidad": "S",
+    "indice_de_carga": "118",
+    "indice_de_velocidad": "S",
     "precio": 387603.87,
-    "características": {
-      "tecnologías": [
+    "caracteristicas": {
+      "tecnologias": [
         "urbano"
       ]
     },
