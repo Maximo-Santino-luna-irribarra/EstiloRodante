@@ -30,22 +30,28 @@
   <form class="filterForm d-flex flex-column gap-3">
     <!-- Tipo -->
     <div>
-      <label for="types" class="form-label">Tipos</label>
-      <select class="form-select form-select-sm" name="Types" id="types">
-        <option value="1">All terrain</option>
-        <option value="2">Offroad</option>
-        <option value="3">Invierno</option>
+      <label for="types" class="form-label">Brands</label>
+      <select class="option form-select form-select-sm" name="Types" id="types">
+        <option value="1">Todos</option>
+        <option value="2">BFGoodrich</option>
+        <option value="3">Michelin</option>
+        <option value="4">Pirelli</option>
+        <option value="4">Firestone</option>
+        <option value="5">Hankook</option>
+        <option value="6">Goodyear</option>
+        <option value="7">Continental</option>
+        <option value="8">Yokohama</option>
       </select>
     </div>
 
     <!-- Marca -->
     <div>
-      <label for="brands" class="form-label">Marcas</label>
-      <select class="form-select form-select-sm" name="Brands" id="brands">
-        <option value="1">Michelin</option>
-        <option value="2">BFGoodrich</option>
-        <option value="3">Pirelli</option>
-        <option value="4">Dunlop</option>
+      <label for="brands" class="form-label">Types</label>
+      <select class="option form-select form-select-sm" name="Brands" id="brands">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
       </select>
     </div>
 
@@ -54,9 +60,9 @@
       <label class="form-label">Precio</label>
       <div class="input-group input-group-sm">
         <span class="input-group-text">$</span>
-        <input type="number" class="form-control" placeholder="Mín">
+        <input type="number" class="minPrice form-control" placeholder="Mín">
         <span class="input-group-text">-</span>
-        <input type="number" class="form-control" placeholder="Máx">
+        <input type="number" class="maxPrice form-control" placeholder="Máx">
       </div>
     </div>
   </form>
@@ -73,66 +79,11 @@
         </select>
         </div>
 
-        <!-- Grilla de productos -->
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-        
-        <!-- Producto 1 -->
-        <div class="col">
-            <div class="card h-100 shadow p-4 rounded-4 border-light">
-            <div class="row g-4 align-items-start">
-                <div class="col-md-4 text-center">
-                <img src="/Img/rin.png" class="" alt="Producto" style="width: 140px; height: 140px;">
-                <p class="mt-3 fw-bold text-primary fs-5">$490.179</p>
-                </div>
-                <div class="col-md-8">
-                <h5 class="card-title text-uppercase">Trail Terrain T/A</h5>
-                <ul class="list-unstyled ps-3 small">
-                    <li><strong>Rodado:</strong> 265/70 R16</li>
-                    <li><strong>Marca y modelo:</strong> BFGoodrich - Trail</li>
-                    <li><strong>Rango de carga:</strong> 112</li>
-                    <li><strong>Alto y ancho:</strong> 265 mm / 70%</li>
-                    <li><strong>Nombre:</strong> Trail Terrain T/A</li>
-                    <li><strong>Tecnología:</strong> Offroad</li>
-                </ul>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between mt-3" class ="botones Clietns">
-                <button class="btn btn-danger btn-sm px-4 rounded-pill shadow-sm">Eliminar</button>
-                <button class="btn btn-primary btn-sm px-4 rounded-pill shadow-sm">Editar</button>
-
-            </div>
-            </div>
-        </div>
-
-        <!-- Producto 2 -->
-        <div class="col">
-            <div class="card h-100 shadow p-4 rounded-4 border-light">
-            <div class="row g-4 align-items-start">
-                <div class="col-md-4 text-center">
-                <img src="/Img/rin.png" class="rounded-circle border border-3 border-white" alt="Producto" style="width: 140px; height: 140px;">
-                <p class="mt-3 fw-bold text-primary fs-5">$398.000</p>
-                </div>
-                <div class="col-md-8">
-                <h5 class="card-title text-uppercase">Winter Grip</h5>
-                <ul class="list-unstyled ps-3 small">
-                    <li><strong>Rodado:</strong> 225/65 R17</li>
-                    <li><strong>Marca y modelo:</strong> Michelin - Winter Grip</li>
-                    <li><strong>Rango de carga:</strong> 102</li>
-                    <li><strong>Alto y ancho:</strong> 225 mm / 65%</li>
-                    <li><strong>Nombre:</strong> Winter Grip</li>
-                    <li><strong>Tecnología:</strong> Nieve</li>
-                </ul>
-                </div>
-            </div>
-            <div class="d-flex justify-content-around mt-4">
-                <button class="btn btn-danger btn-sm px-4">Eliminar</button>
-                <button class="btn btn-primary btn-sm px-4">Editar</button>
-            </div>
-            </div>
-        </div>
+        <div class="box row row-cols-1 row-cols-md-2 g-4">
+            
+       </div>
 
         </div>
-    </div>
     </section>
     </main>
 
