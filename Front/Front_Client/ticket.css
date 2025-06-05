@@ -76,17 +76,3 @@ main{
     font-size: 1.2em;
 }
 
-/* Footer */
-
-footer{
-    background-color: #000;
-    color: var(--second-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10dvh;
-}
-
-footer p{
-    margin: 0 1em;
-}

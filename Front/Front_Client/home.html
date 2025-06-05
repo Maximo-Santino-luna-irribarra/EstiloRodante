@@ -9,38 +9,38 @@
     <link rel="stylesheet" href="styleHome.css">
 </head>
 <body class="min-vh-100 d-flex flex-column justify-content-between">
-    <header class="bg-dark d-flex justify-content-between align-items-center py-2 sticky-top shadow">
-        <h1>
+    <header class="bg-dark d-flex align-items-center py-2 sticky-top shadow justify-content-between">
+        <h1 class="text-white">
             EstiloRodante
         </h1>
-        <nav>
-            <a id="linkHome" href="/Front/Front_Client/home.html">home</a>
-            <a id="linkProducts" href="/Front/Front_Client/products.html">products</a>
-            <a id="linkCart" href="/Front/Front_Client/cart.html">cart</a>
+        <nav class="nav">
+            <a class="nav-link" href="/Front/Front_Client/home.html">Home</a>
+            <a class="nav-link" href="/Front/Front_Client/products.html">Products</a>
+            <a class="nav-link" href="/Front/Front_Client/cart.html">Cart</a>
         </nav>
-        <img id="logoPage" src="/Img/logoPage.png" alt="LogoPagina">
+        <img id="logoPage" src="/Img/logoPage.png" alt="LogoPagina" class="img-fluid mt-2">
     </header>
 
-    <main>
+    <main class="d-flex text-light">
         <div class="content flex-grow-1 border-end">
-            <section class="section1">
-                <h3 class="display-1">Bienvenido Santiago a EstiloRodante !</h3>
+            <section class="section1 min-vh-100">
+                <h3 class="display-1 mx-3 mb-3">Bienvenido Santiago a EstiloRodante !</h3>
             </section>
-            <section class="section2">
-                <h3 class="display-1">Productos</h3>
+            <section class="section2 min-vh-100">
+                <h3 class="mx-3 mb-3 display-1">Productos</h3>
                 <div class="productsSelection d-flex justify-content-around py-4">
 
-                    <a href="/"><img src="/Img/rin.png" alt="rins"></a>
-                    <a href="/"><img src="/Img/cubierta.png" alt="cubiertas"></a>
-                    <a href="/"><img src="/Img/wheel.png" alt="wheels"></a>
+                    <a class="p-4 rounded-circle border border-5 border-dark" href="/"><img src="/Img/rin.png" alt="rins"></a>
+                    <a class="p-4 rounded-circle border border-5 border-dark" href="/"><img src="/Img/cubierta.png" alt="cubiertas"></a>
+                    <a class="p-4 rounded-circle border border-5 border-dark" href="/"><img src="/Img/wheel.png" alt="wheels"></a>
                 </div>
             </section>
         </div>
-        <aside class="d-flex flex-column align-items-center">
+        <aside class="position-sticky d-flex flex-column align-items-center justify-content-between">
             <h3>Ofertas</h3>
             <button id="btnUp" class="material-symbols-outlined">keyboard_arrow_up</button>
             
-                <div id="productCarousel" class="overflow-hidden" style="height: 320px; width: 100%;">
+                <div id="productCarousel" class="d-flex flex-column overflow-hidden overflow-hidden" style="height: 320px; width: 100%;">
                     <div id="carouselInner" class="d-flex flex-column align-items-center">
                         <a><img src="/Img/cubierta.png" alt=""></a>
                         <a><img src="/Img/rin.png" alt=""></a>
@@ -48,6 +48,10 @@
                         <a><img src="/Img/rin.png" alt=""></a>
                         <a><img src="/Img/cubierta.png" alt=""></a>
                         <a><img src="/Img/cubierta.png" alt=""></a>
+                        <a><img src="/Img/cubierta.png" alt=""></a>
+                        <a><img src="/Img/rin.png" alt=""></a>
+                        <a><img src="/Img/wheel.png" alt=""></a>
+                        <a><img src="/Img/rin.png" alt=""></a>
                     </div>
                 </div>
 
@@ -57,10 +61,9 @@
 
     </main>
 
-    <footer>
-        <p>santi Luna & santi Martinez</p>
-
-        <p> © todos los derechos reservados</p>
+    <footer class="bg-dark text-white text-center p-3">
+    <h5>Santi Luna and Santi Martinez</h5>
+    <p class="mb-0">© Todos los derechos reservados</p>
     </footer>
 
 

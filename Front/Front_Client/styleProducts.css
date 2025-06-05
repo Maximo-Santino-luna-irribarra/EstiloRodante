@@ -13,31 +13,16 @@ body {
     font-weight: 100;
 }
 
-header {
-    position: sticky;
-    top: 0px;
-    background-color: var(--second-color);
+.nav a{
+  font-size: 1.3em;
+  margin: 0 1em;
+  border-radius: 20px;
+  color: var(--text-color);
 }
 
-header a {
-    font-size: 1.4em;
-    text-decoration: none;
-    margin: 0px 2em;
-    padding: .5em 1em;
-    border-radius: 15px;
-    color: var(--text-color);
-}
-
-header a:hover{
+.nav a:hover{
   background-color: var(--text-color);
-  color: var(--second-color);
-}
-
-header h1 {
-    margin-left: 1em;
-    font-size: 1.4em;
-    font-weight: 100;
-    text-decoration: underline;
+  color: var(--main-color);
 }
 
 #logoPage {
@@ -105,17 +90,3 @@ aside{
     justify-self: end;
 }
 
-/* Footer */
-
-footer{
-    background-color: #000;
-    color: var(--second-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10dvh;
-}
-
-footer p{
-    margin: 0 1em;
-}

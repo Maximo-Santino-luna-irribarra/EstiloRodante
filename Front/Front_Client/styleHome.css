@@ -8,44 +8,27 @@
 body {
     background-color: var(--main-color);
     color: var(--text-color);
-    min-height: 100dvh;
     font-family: cursive;
-    font-weight: 100;
 }
 
-header {
-    position: sticky;
-    top: 0px;
-    background-color: var(--second-color);
+.nav a{
+  font-size: 1.3em;
+  margin: 0 1em;
+  border-radius: 20px;
+  color: var(--text-color);
 }
 
-header a {
-    font-size: 1.4em;
-    color: var(--text-color);
-    text-decoration: none;
-    margin: 0px 2em;
-    padding: .5em 1em;
-    border-radius: 15px;
-}
-
-header a:hover{
+.nav a:hover{
   background-color: var(--text-color);
-  color: var(--second-color);
+  color: var(--main-color);
 }
 
-header h1 {
-    margin-left: 1em;
-    font-size: 1.4em;
-    font-weight: 100;
-    text-decoration: underline;
-}
-
-#logoPage {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    margin-right: 1em;
-    border-radius: 30%;
+#logoPage{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 1em;
+  border-radius: 30%;
 }
 
 .productsSelection a img, aside div img {
@@ -54,25 +37,13 @@ header h1 {
     object-fit: contain;
 }
 
-.productsSelection a{
-  background-color: var(--second-color);
-  border: 5px solid black;
-  padding: 1.5em;
-  border-radius: 25%;
-}
 
 .productsSelection a:hover{
   transform: scale(1.1);
-  background-color: var(--back-color);
-}
-
-main {
-    display: flex;
-    color: var(--text-color);
+  background-color: var(--main-color);
 }
 
 .section1, .section2 {
-    height: 100dvh;
     min-width: 75dvw;
     max-width: 79dvw;
     align-content: center;
@@ -89,7 +60,6 @@ main {
 }
 
 .section1 h3, .section2 h3{
-    margin: 0 .5em .7em .5em;
     text-shadow: 5px 5px 5px  black;
 }
 
@@ -97,48 +67,16 @@ main {
     background-color: var(--text-color);
 }
 
+/*  */
 aside {
-  position: sticky;
   top: 6em;
   align-self: start;
   height: 80dvh;
-  justify-content: space-around;
-}
-
-/*  */
-aside {
-  position: sticky;
-  top: 6em;
-  height: 80dvh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow: hidden;
   width: 20dvw;
 }
 
-aside .productosCarrusel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: hidden;
-  height: 60dvh;
-  gap: 0.5em;
-}
-
-main {
-  display: flex;
-  gap: 1em;
-}
-
-.content {
-  background: linear-gradient(to right, #121519, var(--main-color), #121519);
-}
-
 #productCarousel {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
   height: 320px;
 }
 
@@ -156,17 +94,9 @@ main {
 
 /*  */
 
-/* Footer */
-
-footer{
-    background-color: #000;
-    color: var(--second-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10dvh;
-}
-
-footer p{
-    margin: 0 1em;
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
