@@ -1,0 +1,92 @@
+:root {
+    --main-color: #021526;
+    --second-color: #bfbfbf;
+    --back-color: #5354cE;
+    --text-color: #eee;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    min-height: 100dvh;
+    font-family: cursive;
+    font-weight: 100;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: var(--second-color);
+}
+
+header a {
+    font-size: 1.4em;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0px 2em;
+    padding: .5em 1em;
+    border-radius: 15px;
+}
+
+header a:hover{
+  background-color: var(--text-color);
+  color: var(--second-color);
+}
+
+header h1 {
+    margin-left: 1em;
+    font-size: 1.4em;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#logoPage {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 1em;
+    border-radius: 30%;
+}
+
+/* Main */
+
+main{
+    justify-items: center;
+}
+
+.ticket{
+    background-color: #fff;
+    color: var(--main-color);
+    width: 40dvw;
+    padding: 2em 4em;
+    border-radius: 5px;
+    border: 4px solid black;
+}
+
+.ticket h2{
+    padding-bottom: 1em;
+}
+
+.description{
+    justify-content: space-between;
+}
+
+.total{
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+/* Footer */
+
+footer{
+    background-color: #000;
+    color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10dvh;
+}
+
+footer p{
+    margin: 0 1em;
+}
