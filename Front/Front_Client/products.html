@@ -10,7 +10,6 @@
 </head>
 <body class="min-vh-100 d-flex flex-column justify-content-between">
     
-    <!-- Header -->
     <header class="bg-dark d-flex align-items-center py-2 px-3 sticky-top shadow justify-content-between">
         <h1 class="text-white">EstiloRodante</h1>
         <nav class="nav">
@@ -21,14 +20,12 @@
         <img id="logoPage" src="/Img/logoPage.png" alt="LogoPagina" class="img-fluid mt-2" style="height: 50px;">
     </header>
 
-    <!-- Sidebar fijo -->
     <aside class="aside-fixed bg-black p-3 rounded shadow-sm">
         <div class="fs-5 fw-bold mb-3 border-bottom pb-2">
             Resultados de llantas
         </div>
         <form class="filterForm d-flex flex-column gap-4">
 
-            <!-- Filtro de Marca -->
             <div>
                 <label for="types" class="form-label fw-semibold">Marca</label>
                  <select class="option form-select form-select-sm" name="brands" id="types">
@@ -44,7 +41,6 @@
                 </select>
             </div>
 
-            <!-- Filtro de Tipo -->
             <div>
                 <label for="brands" class="form-label">Models</label>
                 <select class="option form-select form-select-sm" name="models" id="brands">
@@ -70,7 +66,6 @@
                 </select>
             </div>
 
-            <!-- Filtro de Precio -->
         <div>
             <label class="form-label fw-semibold">Precio</label>
             <div class="d-flex flex-column gap-3">
@@ -104,11 +99,12 @@
         <section class="py-5 px-3 rounded-4 w-100">
             <div class="container">
                 <div class="order mb-4 text-end">
-                    <select class="form-select w-auto d-inline-block">
-                        <option value="">Mayor a menor precio</option>
-                        <option value="">Menor a mayor precio</option>
-                        <option value="">A - Z producto</option>
-                        <option value="">Z - A producto</option>
+                    <select id="ordenar" class="form-select w-auto">
+                      <option value="">Ordenar</option>
+                      <option value="precio-asc">Precio: menor a mayor</option>
+                      <option value="precio-desc">Precio: mayor a menor</option>
+                      <option value="nombre-asc">Nombre: A-Z</option>
+                      <option value="nombre-desc">Nombre: Z-A</option>
                     </select>
                 </div>
 

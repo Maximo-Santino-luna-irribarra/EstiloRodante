@@ -7,31 +7,29 @@ let tech = ''
 const select = document.querySelectorAll(".option")
 
 for (let i = 0; i < select.length; i++) {
-    select[i].addEventListener("input", (e) =>{
-        if(e.target.name == "brands"){
-            brand = e.target.value
-        }
-        if(e.target.name == "models"){
-            model = e.target.value
-        }
-    })
+    select[i].addEventListener("input", (e) => {
+    if (e.target.name == "brands") {
+        brand = e.target.value;
+    }
+    if (e.target.name == "models") {
+        model = e.target.value;
+    }
+    updateProducts();
+    });
 }
 
 const minPrice = document.querySelector(".minPrice")
 const maxPrice = document.querySelector(".maxPrice")
 
 minPrice.addEventListener("input", (e)=>{
-    min = e.target.value    
+    min = parseFloat(e.target.value) || -Infinity
+    updateProducts()
 })
 
 maxPrice.addEventListener("input", (e)=>{
-    max = e.target.value
+    max = parseFloat(e.target.value) || Infinity
+    updateProducts()
 })
-
-const products = document.querySelectorAll(".prod")
-for (let i = 0; i < products.length; i++) {
-    console.log(products[i].value)
-}
 
 const insertProducts = () =>{
     fetch('/neumaticos_50.json')
@@ -45,6 +43,70 @@ const insertProducts = () =>{
     })
 }
 
+let sortOrder = "";
+
+document.getElementById("ordenar").addEventListener("input", (e) => {
+    sortOrder = e.target.value;
+    updateProducts();
+});
+
+
+const box = document.querySelector(".box");
+
+const updateProducts = () => {
+    box.innerHTML = '';
+    fetch('/neumaticos_50.json')
+        .then(res => res.json())
+        .then(productos => {
+            // Aplicar filtros primero
+            const filtrados = productos.filter(p => 
+                filterProducts(
+                    p['marca'],
+                    p['modelo'],
+                    p['caracteristicas']['tecnologias'],
+                    p['precio']
+                )
+            );
+
+            // Aplicar ordenamiento
+            filtrados.sort((a, b) => {
+                switch (sortOrder) {
+                    case 'precio-asc':
+                        return a.precio - b.precio;
+                    case 'precio-desc':
+                        return b.precio - a.precio;
+                    case 'nombre-asc':
+                        return a.modelo.localeCompare(b.modelo);
+                    case 'nombre-desc':
+                        return b.modelo.localeCompare(a.modelo);
+                    default:
+                        return 0;
+                }
+            });
+
+            // Mostrar productos
+            for (let i = 0; i < filtrados.length; i++) {
+                const p = filtrados[i];
+                writeProduct(
+                    p['marca'],
+                    p['modelo'],
+                    p['medida'],
+                    p["indice_de_carga"],
+                    p["indice_de_velocidad"],
+                    p["precio"],
+                    p["caracteristicas"]['tecnologias']
+                );
+            }
+
+            // (opcional) mensaje si no hay resultados
+            if (filtrados.length === 0) {
+                box.innerHTML = `<div class="alert alert-warning text-center w-100">No se encontraron productos.</div>`;
+            }
+        });
+};
+
+
+
 const writeProduct = (marca, modelo, medida, indiceCarga, indiceVelocidad, precio, tecnologias)=>{
     if(filterProducts(marca, modelo, tecnologias, precio)){
         const box = document.querySelector(".box")
@@ -55,10 +117,10 @@ const writeProduct = (marca, modelo, medida, indiceCarga, indiceVelocidad, preci
                 <div class="row g-4 align-items-start">
                     <div class="col-md-4 text-center">
                     <img src="/Img/rin.png" class="" alt="Producto" style="width: 140px; height: 140px;">
-                    <p class="mt-3 fw-bold text-primary fs-5">$490.179</p>
+                    <p class="mt-3 fw-bold text-primary fs-5">$${precio}</p>
                     </div>
                     <div class="col-md-8">
-                    <h5 class="card-title text-uppercase">Trail Terrain T/A</h5>
+                    <h5 class="card-title text-uppercase">${modelo + medida}</h5>
                     <ul class="list-unstyled ps-3 small">
                         <li><strong>Marca:</strong> ${marca}</li>
                         <li><strong>Modelo:</strong> ${modelo}</li>
@@ -71,7 +133,7 @@ const writeProduct = (marca, modelo, medida, indiceCarga, indiceVelocidad, preci
                     </div>
                 </div>
                 <div class="d-flex justify-content-between mt-3">
-                    <button class="btn btn- btn-sm px-5">Eliminar</button>
+                    <button class="btn btn-danger btn-sm px-5">Eliminar</button>
                     <button class="btn btn-primary btn-sm px-5">Editar</button>
                 </div>
                 `
@@ -79,20 +141,22 @@ const writeProduct = (marca, modelo, medida, indiceCarga, indiceVelocidad, preci
     }
 }
 
-const filterProducts = (marca, modelo, tecnologias, precio) =>{
-    if(brand != '' && marca != brand){
-        return false
+const filterProducts = (marca, modelo, tecnologias, precio) => {
+    precio = Number(precio);
+    if (brand !== 'Todos' && brand !== '' && marca !== brand) {
+        return false;
     }
-    if(model != '' && modelo != model){
-        return false
+    if (model !== 'Todos' && model !== '' && modelo !== model) {
+        return false;
     }
-    if(tech != '' && !(tecnologias.includes(`${tech}`))){
-        return false
+    if (tech !== '' && !tecnologias.includes(tech)) {
+        return false;
     }
-    if(precio > max || precio < min){
-        return false
+    if (precio < min || precio > max) {
+        return false;
     }
-    return true
-}
+    console.log(precio, min, max)
+    return true;
+};
 
 insertProducts()
