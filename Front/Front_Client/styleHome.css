@@ -2,7 +2,7 @@
     --main-color: #021526;
     --second-color: #bfbfbf;
     --back-color: #5354cE;
-    --text-color: #03346E;
+    --text-color: #eee;
 }
 
 body {
@@ -68,7 +68,7 @@ header h1 {
 
 main {
     display: flex;
-    color: var(--second-color);
+    color: var(--text-color);
 }
 
 .section1, .section2 {
