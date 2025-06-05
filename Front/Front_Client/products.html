@@ -22,35 +22,45 @@
     </header>
 
     <main class="d-flex">
-        <aside class="bg-dark d-flex flex-column">
-            <div class="fs-4 p-2">
-                <p>
-                    Resultados de llantas
-                </p>
-            </div>
-            <form class="filterForm d-flex flex-column">
-                <label for="brands" class="m-2">Types</label>
-                <select class="option" name="Types" id="brands">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
-                <label for="brands" class="m-2">Brands</label>
-                <select class="option" name="Brands" id="brands">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-                <label for="" class="m-2">Price</label>
-                <div class="price d-flex">
-                    <input type="text" class="minPrice">
-                    <p>-</p>
-                    <input type="text" class="maxPrice">
-                </div>
-            </form>
-        </aside>
+     <aside class="bg-dark text-white p-4 rounded-4 shadow-sm" style="max-width: 300px;">
+  <div class="fs-5 fw-bold mb-3 border-bottom pb-2">
+    Resultados de llantas
+  </div>
 
+  <form class="filterForm d-flex flex-column gap-3">
+    <!-- Tipo -->
+    <div>
+      <label for="types" class="form-label">Tipos</label>
+      <select class="form-select form-select-sm" name="Types" id="types">
+        <option value="1">All terrain</option>
+        <option value="2">Offroad</option>
+        <option value="3">Invierno</option>
+      </select>
+    </div>
+
+    <!-- Marca -->
+    <div>
+      <label for="brands" class="form-label">Marcas</label>
+      <select class="form-select form-select-sm" name="Brands" id="brands">
+        <option value="1">Michelin</option>
+        <option value="2">BFGoodrich</option>
+        <option value="3">Pirelli</option>
+        <option value="4">Dunlop</option>
+      </select>
+    </div>
+
+    <!-- Precio -->
+    <div>
+      <label class="form-label">Precio</label>
+      <div class="input-group input-group-sm">
+        <span class="input-group-text">$</span>
+        <input type="number" class="form-control" placeholder="Mín">
+        <span class="input-group-text">-</span>
+        <input type="number" class="form-control" placeholder="Máx">
+      </div>
+    </div>
+  </form>
+</aside>
     <section class="py-5 px-3   rounded-4">
     <div class="container">
         <!-- Filtro de ordenamiento -->
@@ -86,9 +96,10 @@
                 </ul>
                 </div>
             </div>
-            <div class="d-flex justify-content-between mt-3">
-                <button class="btn btn- btn-sm px-5">Eliminar</button>
-                <button class="btn btn-primary btn-sm px-5">Editar</button>
+            <div class="d-flex justify-content-between mt-3" class ="botones Clietns">
+                <button class="btn btn-danger btn-sm px-4 rounded-pill shadow-sm">Eliminar</button>
+                <button class="btn btn-primary btn-sm px-4 rounded-pill shadow-sm">Editar</button>
+
             </div>
             </div>
         </div>
