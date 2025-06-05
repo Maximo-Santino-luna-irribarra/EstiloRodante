@@ -90,3 +90,15 @@ aside{
     justify-self: end;
 }
 
+
+.aside-fixed {
+    position: fixed;
+    left: 0;
+    top: 100px; /* separa del header */
+    right: 30px;
+    width: 200px;
+    height: 30em;
+    z-index: 1000;
+    padding: 10px;
+    margin-left: 5em;
+    }

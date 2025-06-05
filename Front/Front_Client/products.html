@@ -4,96 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EstiloRodante</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="styleProducts.css">
 </head>
 <body class="min-vh-100 d-flex flex-column justify-content-between">
-    <header class="bg-dark d-flex align-items-center py-2 sticky-top shadow justify-content-between">
-        <h1 class="text-white">
-            EstiloRodante
-        </h1>
+    
+    <!-- Header -->
+    <header class="bg-dark d-flex align-items-center py-2 px-3 sticky-top shadow justify-content-between">
+        <h1 class="text-white">EstiloRodante</h1>
         <nav class="nav">
-            <a class="nav-link" href="/Front/Front_Client/home.html">Home</a>
-            <a class="nav-link" href="/Front/Front_Client/products.html">Products</a>
-            <a class="nav-link" href="/Front/Front_Client/cart.html">Cart</a>
+            <a class="nav-link text-white" href="/Front/Front_Client/home.html">Home</a>
+            <a class="nav-link text-white" href="/Front/Front_Client/products.html">Products</a>
+            <a class="nav-link text-white" href="/Front/Front_Client/cart.html">Cart</a>
         </nav>
-        <img id="logoPage" src="/Img/logoPage.png" alt="LogoPagina" class="img-fluid mt-2">
+        <img id="logoPage" src="/Img/logoPage.png" alt="LogoPagina" class="img-fluid mt-2" style="height: 50px;">
     </header>
 
-    <main class="d-flex">
-     <aside class="bg-dark text-white p-4 rounded-4 shadow-sm" style="max-width: 300px;">
-  <div class="fs-5 fw-bold mb-3 border-bottom pb-2">
-    Resultados de llantas
-  </div>
+    <!-- Sidebar fijo -->
+    <aside class="aside-fixed bg-black p-3 rounded shadow-sm">
+        <div class="fs-5 fw-bold mb-3 border-bottom pb-2">
+            Resultados de llantas
+        </div>
+        <form class="filterForm d-flex flex-column gap-4">
 
-  <form class="filterForm d-flex flex-column gap-3">
-    <!-- Tipo -->
-    <div>
-      <label for="types" class="form-label">Brands</label>
-      <select class="option form-select form-select-sm" name="Types" id="types">
-        <option value="1">Todos</option>
-        <option value="2">BFGoodrich</option>
-        <option value="3">Michelin</option>
-        <option value="4">Pirelli</option>
-        <option value="4">Firestone</option>
-        <option value="5">Hankook</option>
-        <option value="6">Goodyear</option>
-        <option value="7">Continental</option>
-        <option value="8">Yokohama</option>
-      </select>
-    </div>
+            <!-- Filtro de Marca -->
+            <div>
+                <label for="types" class="form-label fw-semibold">Marca</label>
+                <select class="form-select form-select-sm" name="Types" id="types">
+                <option value="1">Todos</option>
+                <option value="2">BFGoodrich</option>
+                <option value="3">Michelin</option>
+                <option value="4">Pirelli</option>
+                <option value="5">Firestone</option>
+                <option value="6">Hankook</option>
+                <option value="7">Goodyear</option>
+                <option value="8">Yokohama</option>
+                </select>
+            </div>
 
-    <!-- Marca -->
-    <div>
-      <label for="brands" class="form-label">Types</label>
-      <select class="option form-select form-select-sm" name="Brands" id="brands">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-    </div>
+            <!-- Filtro de Tipo -->
+            <div>
+                <label for="brands" class="form-label fw-semibold">Tipo</label>
+                <select class="form-select form-select-sm" name="Brands" id="brands">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                </select>
+            </div>
 
-    <!-- Precio -->
-    <div>
-      <label class="form-label">Precio</label>
-      <div class="input-group input-group-sm">
-        <span class="input-group-text">$</span>
-        <input type="number" class="minPrice form-control" placeholder="Mín">
-        <span class="input-group-text">-</span>
-        <input type="number" class="maxPrice form-control" placeholder="Máx">
-      </div>
-    </div>
-  </form>
-</aside>
-    <section class="py-5 px-3   rounded-4">
-    <div class="container">
-        <!-- Filtro de ordenamiento -->
-        <div class="order mb-4 text-end">
-        <select class="form-select w-auto d-inline-block">
-            <option value="">Mayor a menor precio</option>
-            <option value="">Menor a mayor precio</option>
-            <option value="">A - Z producto</option>
-            <option value="">Z - A producto</option>
-        </select>
+            <!-- Filtro de Precio -->
+        <div>
+            <label class="form-label fw-semibold">Precio</label>
+            <div class="d-flex flex-column gap-3">
+                
+               <div class="mb-3">
+                    <label class="form-label fw-semibold mb-1">Precio mínimo</label>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text align-items-center py-0 px-2 bg-light" style="height: 32px;">$</span>
+                            <input type="number" class="form-control minPrice" placeholder="Precio mínimo" style="height: 32px;">
+                        </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold mb-1">Precio máximo</label>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text align-items-center py-0 px-2 bg-light" style="height: 32px;">$</span>
+                            <input type="number" class="form-control maxPrice" placeholder="Precio máximo" style="height: 32px;">
+                        </div>
+                </div>
+
+            </div>
         </div>
 
-        <div class="box row row-cols-1 row-cols-md-2 g-4">
-            
-       </div>
 
-        </div>
-    </section>
+        </form>
+        
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="d-flex" style="margin-left: 300px;">
+        <section class="py-5 px-3 rounded-4 w-100">
+            <div class="container">
+                <div class="order mb-4 text-end">
+                    <select class="form-select w-auto d-inline-block">
+                        <option value="">Mayor a menor precio</option>
+                        <option value="">Menor a mayor precio</option>
+                        <option value="">A - Z producto</option>
+                        <option value="">Z - A producto</option>
+                    </select>
+                </div>
+
+                <div class="box row row-cols-1 row-cols-md-2 g-4">
+                    <!-- Acá van los productos dinámicamente -->
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center p-3 mt-4">
-    <h5>Santi Luna and Santi Martinez</h5>
-    <p class="mb-0">© Todos los derechos reservados</p>
+        <h5>Santi Luna and Santi Martinez</h5>
+        <p class="mb-0">© Todos los derechos reservados</p>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/Front/Scrpits/products.js"></script>
 </body>
 </html>
