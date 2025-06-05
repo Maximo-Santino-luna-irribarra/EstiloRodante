@@ -14,30 +14,17 @@
   <div class="form-container bg-white p-4 rounded shadow" style="width: 100%; max-width: 350px;">
     <div class="tabs d-flex justify-content-around mb-3">
       <div class="tab active" onclick="showForm('user')">User</div>
-      <div class="tab" onclick="showForm('admin')">Admin</div>
     </div>
 
     <!-- User Form -->
     <form class="form active" id="userForm">
       <div class="mb-3 text-start">
-        <label for="nombre" class="form-label">Nombre:</label>
+        <label for="nombre" class="form-label">Ingrese su nombre</label>
         <input type="text" id="nombre" name="nombre" class="form-control" required>
       </div>
     </form>
 
-    <!-- Admin Form -->
-    <form class="form" id="adminForm">
-      <div class="mb-3 text-start">
-        <label for="adminUser" class="form-label">Admin:</label>
-        <input type="text" id="adminUser" name="adminUser" class="form-control" required>
-      </div>
-      <div class="mb-3 text-start">
-        <label for="adminPass" class="form-label">Contraseña Admin:</label>
-        <input type="password" id="adminPass" name="adminPass" class="form-control" required>
-      </div>
-      <button type="submit" class="btn btn-dark w-100">Acceder</button>
-    </form>
-  </div>
+
 
   <script src="/Front/Scrpits/login.js"></script>
 </body>
