@@ -51,43 +51,78 @@
             </form>
         </aside>
 
-        <section class="bg-dark products">
-                <div class="order">
-                    <select name="" id="">
-                        <option value="">Mayor a menor precio</option>
-                        <option value="">Menor a mayor precio</option>
-                        <option value="">A - Z producto</option>
-                        <option value="">Z - A producto</option>
-                    </select>
-                </div>
-                <div class="productsBox">
-                    <div class="prod col">
-                    <div class="card shadow p-4 rounded-4" style="max-width: 700px; border: 2px solid #000; margin: auto;">
-                    <div class="row g-4 align-items-start">
-                        <div class="col-md-4 text-center">
-                        <img src="/Img/rin.png" class="rounded-circle" alt="Producto" style="width: 140px; height: 140px;">
-                        <p class="mt-3 fw-bold">Precio</p>
-                        </div>
-                        <div class="col-md-8">
-                        <h5 class="card-title">Nombre de producto</h5>
-                        <ul class="list-unstyled ps-3">
-                            <li><strong>Rodado:</strong></li>
-                            <li><strong>Marca y modelo: 1</strong></li>
-                            <li><strong>Rango de carga:</strong></li>
-                            <li><strong>Alto y ancho:</strong></li>
-                            <li><strong>Nombre:</strong></li>
-                            <li><strong>Tecnología:</strong></li>
-                        </ul>
-                        </div>
-                    </div> 
-                    <div class="d-flex justify-content-around mt-4">
-                        <button class="btn btn-danger btn-sm">Eliminar</button>
-                        <button class="btn btn-primary btn-sm">Editar</button>
-                    </div>
-                    </div>
-                </div>
-        </section>
+    <section class="py-5 px-3   rounded-4">
+    <div class="container">
+        <!-- Filtro de ordenamiento -->
+        <div class="order mb-4 text-end">
+        <select class="form-select w-auto d-inline-block">
+            <option value="">Mayor a menor precio</option>
+            <option value="">Menor a mayor precio</option>
+            <option value="">A - Z producto</option>
+            <option value="">Z - A producto</option>
+        </select>
+        </div>
+
+        <!-- Grilla de productos -->
+        <div class="row row-cols-1 row-cols-md-2 g-4">
         
+        <!-- Producto 1 -->
+        <div class="col">
+            <div class="card h-100 shadow p-4 rounded-4 border-light">
+            <div class="row g-4 align-items-start">
+                <div class="col-md-4 text-center">
+                <img src="/Img/rin.png" class="" alt="Producto" style="width: 140px; height: 140px;">
+                <p class="mt-3 fw-bold text-primary fs-5">$490.179</p>
+                </div>
+                <div class="col-md-8">
+                <h5 class="card-title text-uppercase">Trail Terrain T/A</h5>
+                <ul class="list-unstyled ps-3 small">
+                    <li><strong>Rodado:</strong> 265/70 R16</li>
+                    <li><strong>Marca y modelo:</strong> BFGoodrich - Trail</li>
+                    <li><strong>Rango de carga:</strong> 112</li>
+                    <li><strong>Alto y ancho:</strong> 265 mm / 70%</li>
+                    <li><strong>Nombre:</strong> Trail Terrain T/A</li>
+                    <li><strong>Tecnología:</strong> Offroad</li>
+                </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn- btn-sm px-5">Eliminar</button>
+                <button class="btn btn-primary btn-sm px-5">Editar</button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col">
+            <div class="card h-100 shadow p-4 rounded-4 border-light">
+            <div class="row g-4 align-items-start">
+                <div class="col-md-4 text-center">
+                <img src="/Img/rin.png" class="rounded-circle border border-3 border-white" alt="Producto" style="width: 140px; height: 140px;">
+                <p class="mt-3 fw-bold text-primary fs-5">$398.000</p>
+                </div>
+                <div class="col-md-8">
+                <h5 class="card-title text-uppercase">Winter Grip</h5>
+                <ul class="list-unstyled ps-3 small">
+                    <li><strong>Rodado:</strong> 225/65 R17</li>
+                    <li><strong>Marca y modelo:</strong> Michelin - Winter Grip</li>
+                    <li><strong>Rango de carga:</strong> 102</li>
+                    <li><strong>Alto y ancho:</strong> 225 mm / 65%</li>
+                    <li><strong>Nombre:</strong> Winter Grip</li>
+                    <li><strong>Tecnología:</strong> Nieve</li>
+                </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around mt-4">
+                <button class="btn btn-danger btn-sm px-4">Eliminar</button>
+                <button class="btn btn-primary btn-sm px-4">Editar</button>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
     </main>
 
     <footer class="bg-dark text-white text-center p-3 mt-4">
