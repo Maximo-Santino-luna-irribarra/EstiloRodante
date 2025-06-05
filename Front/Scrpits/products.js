@@ -1,7 +1,7 @@
 let min = -99999999999999
 let max = 999999999999999
-let brand = 'BFGoodrich'
-let model = 'Trail Terrain T/A'
+let brand = ''
+let model = ''
 let tech = ''
 
 const select = document.querySelectorAll(".option")
@@ -80,15 +80,13 @@ const writeProduct = (marca, modelo, medida, indiceCarga, indiceVelocidad, preci
 }
 
 const filterProducts = (marca, modelo, tecnologias, precio) =>{
-    if(marca != '' && marca != brand){
+    if(brand != '' && marca != brand){
         return false
     }
-    if(modelo != '' && modelo != model){
+    if(model != '' && modelo != model){
         return false
     }
-    if(tecnologias[0] != '' && !(tech.includes(`${tecnologias[0]}`))){
-        console.log(tech.includes(`${tecnologias[0]}`))
-        console.log(tecnologias[0] != '')
+    if(tech != '' && !(tecnologias.includes(`${tech}`))){
         return false
     }
     if(precio > max || precio < min){
