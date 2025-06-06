@@ -3,6 +3,11 @@ let max = 999999999999999
 let brand = ''
 let model = ''
 let tech = ''
+let type = ''
+
+const params = new URLSearchParams(window.location.search);
+type = params.get("type");
+
 
 const select = document.querySelectorAll(".option")
 
@@ -13,6 +18,9 @@ for (let i = 0; i < select.length; i++) {
     }
     if (e.target.name == "models") {
         model = e.target.value;
+    }
+    if (e.target.name == "type"){
+        type = e.target.value
     }
     updateProducts();
     });
@@ -38,11 +46,11 @@ const insertProducts = () =>{
     })
     .then(productos =>{
         for (let i = 0; i < productos.length; i++) {
-            writeProduct(productos[i]['marca'] , productos[i]['modelo'], productos[i]['medida'], productos[i]["indice_de_carga"], productos[i]["indice_de_velocidad"], productos[i]["precio"], productos[i]["caracteristicas"]['tecnologias'])
+            writeProduct(productos[i]['type'], productos[i]['marca'] , productos[i]['modelo'], productos[i]['medida'], productos[i]["indice_de_carga"], productos[i]["indice_de_velocidad"], productos[i]["precio"], productos[i]["caracteristicas"]['tecnologias'])
         }
     })
 }
-
+console.log(type)
 let sortOrder = "";
 
 document.getElementById("ordenar").addEventListener("input", (e) => {
@@ -58,9 +66,9 @@ const updateProducts = () => {
     fetch('/neumaticos_50.json')
         .then(res => res.json())
         .then(productos => {
-            // Aplicar filtros primero
             const filtrados = productos.filter(p => 
                 filterProducts(
+                    p['type'],
                     p['marca'],
                     p['modelo'],
                     p['caracteristicas']['tecnologias'],
@@ -68,7 +76,6 @@ const updateProducts = () => {
                 )
             );
 
-            // Aplicar ordenamiento
             filtrados.sort((a, b) => {
                 switch (sortOrder) {
                     case 'precio-asc':
@@ -84,10 +91,10 @@ const updateProducts = () => {
                 }
             });
 
-            // Mostrar productos
             for (let i = 0; i < filtrados.length; i++) {
                 const p = filtrados[i];
                 writeProduct(
+                    p['type'],
                     p['marca'],
                     p['modelo'],
                     p['medida'],
@@ -98,7 +105,6 @@ const updateProducts = () => {
                 );
             }
 
-            // (opcional) mensaje si no hay resultados
             if (filtrados.length === 0) {
                 box.innerHTML = `<div class="alert alert-warning text-center w-100">No se encontraron productos.</div>`;
             }
@@ -107,8 +113,8 @@ const updateProducts = () => {
 
 
 
-const writeProduct = (marca, modelo, medida, indiceCarga, indiceVelocidad, precio, tecnologias)=>{
-    if(filterProducts(marca, modelo, tecnologias, precio)){
+const writeProduct = (tipo, marca, modelo, medida, indiceCarga, indiceVelocidad, precio, tecnologias)=>{
+    if(filterProducts(tipo, marca, modelo, tecnologias, precio)){
         const box = document.querySelector(".box")
         const product = document.createElement("div")
         product.className = "col"
@@ -116,12 +122,13 @@ const writeProduct = (marca, modelo, medida, indiceCarga, indiceVelocidad, preci
                 <div class="card h-100 shadow p-4 rounded-4 border-light">
                 <div class="row g-4 align-items-start">
                     <div class="col-md-4 text-center">
-                    <img src="/Img/rin.png" class="" alt="Producto" style="width: 140px; height: 140px;">
+                    <img src="/Img/wheel.png" class="" alt="Producto" style="width: 140px; height: 140px;">
                     <p class="mt-3 fw-bold text-primary fs-5">$${precio}</p>
                     </div>
                     <div class="col-md-8">
                     <h5 class="card-title text-uppercase">${modelo + medida}</h5>
                     <ul class="list-unstyled ps-3 small">
+                        <li><strong>Tipo:</strong> ${tipo}</li>
                         <li><strong>Marca:</strong> ${marca}</li>
                         <li><strong>Modelo:</strong> ${modelo}</li>
                         <li><strong>Medida:</strong>${medida}</li>
@@ -141,7 +148,7 @@ const writeProduct = (marca, modelo, medida, indiceCarga, indiceVelocidad, preci
     }
 }
 
-const filterProducts = (marca, modelo, tecnologias, precio) => {
+const filterProducts = (tipo, marca, modelo, tecnologias, precio) => {
     precio = Number(precio);
     if (brand !== 'Todos' && brand !== '' && marca !== brand) {
         return false;
@@ -155,7 +162,9 @@ const filterProducts = (marca, modelo, tecnologias, precio) => {
     if (precio < min || precio > max) {
         return false;
     }
-    console.log(precio, min, max)
+    if (type !== 'Todos' && type !== '' && tipo !== type) {
+        return false;
+    }
     return true;
 };
 

@@ -1,5 +1,6 @@
 [
   {
+    "type": "neumatico",
     "marca": "BFGoodrich",
     "modelo": "Trail Terrain T/A",
     "medida": "248/65 R16",
@@ -14,6 +15,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "BFGoodrich",
     "modelo": "Trail Terrain T/A",
     "medida": "207/70 R18",
@@ -28,6 +30,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "BFGoodrich",
     "modelo": "Trail Terrain T/A",
     "medida": "211/65 R16",
@@ -42,6 +45,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "BFGoodrich",
     "modelo": "Mud Terrain KM3",
     "medida": "223/70 R17",
@@ -56,6 +60,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "BFGoodrich",
     "modelo": "Mud Terrain KM3",
     "medida": "239/70 R17",
@@ -70,6 +75,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "BFGoodrich",
     "modelo": "Mud Terrain KM3",
     "medida": "260/70 R15",
@@ -84,6 +90,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Michelin",
     "modelo": "Primacy 4",
     "medida": "217/60 R18",
@@ -98,6 +105,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Michelin",
     "modelo": "Primacy 4",
     "medida": "208/75 R17",
@@ -112,6 +120,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Michelin",
     "modelo": "Primacy 4",
     "medida": "247/70 R15",
@@ -126,6 +135,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Michelin",
     "modelo": "X-Ice Snow",
     "medida": "245/60 R18",
@@ -140,6 +150,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Michelin",
     "modelo": "X-Ice Snow",
     "medida": "251/60 R15",
@@ -154,6 +165,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Michelin",
     "modelo": "X-Ice Snow",
     "medida": "263/65 R17",
@@ -168,6 +180,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Pirelli",
     "modelo": "Scorpion ATR",
     "medida": "240/65 R15",
@@ -182,6 +195,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Pirelli",
     "modelo": "Scorpion ATR",
     "medida": "198/55 R19",
@@ -196,6 +210,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Pirelli",
     "modelo": "Scorpion ATR",
     "medida": "244/55 R19",
@@ -210,6 +225,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Pirelli",
     "modelo": "P Zero Trofeo R",
     "medida": "208/65 R19",
@@ -224,6 +240,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Pirelli",
     "modelo": "P Zero Trofeo R",
     "medida": "214/75 R15",
@@ -238,6 +255,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Pirelli",
     "modelo": "P Zero Trofeo R",
     "medida": "265/55 R15",
@@ -252,6 +270,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Firestone",
     "modelo": "Destination LE3",
     "medida": "200/55 R19",
@@ -266,6 +285,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Firestone",
     "modelo": "Destination LE3",
     "medida": "267/65 R17",
@@ -280,6 +300,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Firestone",
     "modelo": "Destination LE3",
     "medida": "245/55 R15",
@@ -294,6 +315,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Firestone",
     "modelo": "Winterforce 2 UV",
     "medida": "263/65 R17",
@@ -308,6 +330,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Firestone",
     "modelo": "Winterforce 2 UV",
     "medida": "284/75 R16",
@@ -322,6 +345,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Firestone",
     "modelo": "Winterforce 2 UV",
     "medida": "195/60 R19",
@@ -336,6 +360,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Hankook",
     "modelo": "Dynapro AT2",
     "medida": "257/55 R15",
@@ -350,6 +375,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Hankook",
     "modelo": "Dynapro AT2",
     "medida": "239/70 R19",
@@ -364,6 +390,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Hankook",
     "modelo": "Dynapro AT2",
     "medida": "234/75 R16",
@@ -378,6 +405,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Hankook",
     "modelo": "Ventus R-S4",
     "medida": "267/70 R18",
@@ -392,6 +420,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Hankook",
     "modelo": "Ventus R-S4",
     "medida": "280/60 R16",
@@ -406,6 +435,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Hankook",
     "modelo": "Ventus R-S4",
     "medida": "224/55 R18",
@@ -420,6 +450,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Goodyear",
     "modelo": "Wrangler All-Terrain",
     "medida": "216/65 R15",
@@ -434,6 +465,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Goodyear",
     "modelo": "Wrangler All-Terrain",
     "medida": "250/70 R17",
@@ -448,6 +480,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Goodyear",
     "modelo": "Wrangler All-Terrain",
     "medida": "283/75 R18",
@@ -462,6 +495,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Goodyear",
     "modelo": "Eagle F1 Asymmetric",
     "medida": "220/55 R19",
@@ -476,6 +510,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Goodyear",
     "modelo": "Eagle F1 Asymmetric",
     "medida": "199/70 R16",
@@ -490,6 +525,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Goodyear",
     "modelo": "Eagle F1 Asymmetric",
     "medida": "283/75 R15",
@@ -504,6 +540,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Continental",
     "modelo": "CrossContact LX25",
     "medida": "284/55 R18",
@@ -518,6 +555,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Continental",
     "modelo": "CrossContact LX25",
     "medida": "267/65 R15",
@@ -532,6 +570,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Continental",
     "modelo": "CrossContact LX25",
     "medida": "198/70 R19",
@@ -546,6 +585,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Continental",
     "modelo": "ExtremeContact Sport",
     "medida": "214/60 R17",
@@ -560,6 +600,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Continental",
     "modelo": "ExtremeContact Sport",
     "medida": "264/65 R16",
@@ -574,6 +615,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Continental",
     "modelo": "ExtremeContact Sport",
     "medida": "230/60 R17",
@@ -588,6 +630,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Yokohama",
     "modelo": "Geolandar A/T",
     "medida": "275/55 R15",
@@ -602,6 +645,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Yokohama",
     "modelo": "Geolandar A/T",
     "medida": "270/60 R16",
@@ -616,6 +660,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Yokohama",
     "modelo": "Geolandar A/T",
     "medida": "202/70 R17",
@@ -630,6 +675,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Yokohama",
     "modelo": "Advan Neova AD08R",
     "medida": "261/65 R19",
@@ -644,6 +690,7 @@
     "disponibilidad": "Stock limitado"
   },
   {
+    "type": "neumatico",
     "marca": "Yokohama",
     "modelo": "Advan Neova AD08R",
     "medida": "245/55 R17",
@@ -658,6 +705,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Yokohama",
     "modelo": "Advan Neova AD08R",
     "medida": "239/65 R16",
@@ -672,6 +720,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "Michelin",
     "modelo": "Primacy 4",
     "medida": "202/70 R16",
@@ -686,6 +735,7 @@
     "disponibilidad": "En stock"
   },
   {
+    "type": "neumatico",
     "marca": "BFGoodrich",
     "modelo": "Mud Terrain KM3",
     "medida": "279/60 R17",

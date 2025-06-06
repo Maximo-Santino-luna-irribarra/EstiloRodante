@@ -44,6 +44,9 @@ aside{
     padding: 0 2em;
     border-radius: 20px;
     margin-top: 1.3em;
+    max-height: 90vh;
+    overflow: hidden;
+    top: 1rem;
 }
 
 .minPrice, .maxPrice{
@@ -94,10 +97,10 @@ aside{
 .aside-fixed {
     position: fixed;
     left: 0;
-    top: 100px; /* separa del header */
+    top: 100px;
     right: 30px;
     width: 200px;
-    height: 30em;
+    height: 40em;
     z-index: 1000;
     padding: 10px;
     margin-left: 5em;

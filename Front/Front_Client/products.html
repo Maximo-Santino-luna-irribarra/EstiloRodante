@@ -20,11 +20,21 @@
         <img id="logoPage" src="/Img/logoPage.png" alt="LogoPagina" class="img-fluid mt-2" style="height: 50px;">
     </header>
 
-    <aside class="aside-fixed bg-black p-3 rounded shadow-sm">
+    <aside class="aside-fixed bg-black p-4 rounded shadow-sm">
         <div class="fs-5 fw-bold mb-3 border-bottom pb-2">
             Resultados de llantas
         </div>
         <form class="filterForm d-flex flex-column gap-4">
+
+            <div>
+                <label for="types" class="form-label fw-semibold">Types</label>
+                 <select class="option form-select form-select-sm" name="type" id="types">
+                    <option value="Todos">Todos</option>
+                    <option value="rin">Rin</option>
+                    <option value="neumatico">Neumatico</option>
+                    <option value="wheel">Rueda</option>
+                </select>
+            </div>
 
             <div>
                 <label for="types" class="form-label fw-semibold">Marca</label>
