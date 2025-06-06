@@ -93,7 +93,6 @@ aside{
     justify-self: end;
 }
 
-
 .aside-fixed {
     position: fixed;
     left: 0;
@@ -104,4 +103,4 @@ aside{
     z-index: 1000;
     padding: 10px;
     margin-left: 5em;
-    }
+}
