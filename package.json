@@ -1,5 +1,30 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.6"
-  }
+    "bootstrap": "^5.3.6",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "name": "estilorodante",
+  "version": "1.0.0",
+  "description": "Esta aplicación tiene como objetivo usarse en una pantalla de autoservicio en sucursales de algunas gomerías, donde los clientes puedan adquirir estos productos. La finalidad principal es aprobar la materia de Programación 3 de manera más que satisfactoria.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./Front/Scrpits/index.js",
+    "dev": "nodemon ./Front/Scrpits/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maximo-Santino-luna-irribarra/EstiloRodante.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maximo-Santino-luna-irribarra/EstiloRodante/issues"
+  },
+  "homepage": "https://github.com/Maximo-Santino-luna-irribarra/EstiloRodante#readme"
 }
